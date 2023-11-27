@@ -13,6 +13,19 @@ body{
     align-items: center;
     min-height:100vh;
 }
+@media screen and (min-width: 481px){
+    .Container{
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        min-height: 1000px;
+        background:white ;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        box-shadow: 0 35px 55px rgba(10, 10, 10, 0.3)
+    }
+}
+@media screen and (max-width:480px){
 .Container{
     position: relative;
     width: 100%;
@@ -20,9 +33,11 @@ body{
     min-height: 1000px;
     background:white ;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(10, 10, 10, 0.3)
 }
+}
+
 .Container .Left_Side{
     position: relative;
     background:rgb(11, 11, 69) ;
@@ -70,7 +85,7 @@ body{
     position: relative;
     width: 200px;
     max-width: 200px;
-    min-height: 500px;
+    min-height: 400px;
     background:rgb(11, 11, 69);
 }
 .Contact .Up_Side{
@@ -84,6 +99,7 @@ body{
 .Contact .Down_Side{
     position: relative;
     margin-top: 20px;
+    margin-bottom:20px;
     padding: 0px;
     width: 200px;
     height: 200px;
@@ -96,14 +112,15 @@ body{
     margin-top: 0px;
     padding: 20px;
     width: 20px;
-    height: 400px;
+    height: 118px;
     border-radius: 25px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 .Contact .Down_Side .Yellow_Container .icon{
-        position: relative;
         color: rgb(11, 11, 69);
-        margin-left:-10px;
     
 }
 .Contact .Down_Side .Text_Container{
@@ -136,6 +153,35 @@ a{
 
 .Container .Right_Side{
     position: relative;
-    background:rgb(166, 14, 14) ;
+    background:rgb(255, 255, 255) ;
     padding: 40px;
 }
+.Informacje{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.InfNag{
+    color:black;
+    font-style: sans-serif;
+    padding-bottom: 10px;
+    border-top: 1px solid rgba(11, 11, 69, 0.3);
+}
+.InfNag1{
+    color:black;
+    font-style: sans-serif;
+    padding-bottom: 10px;
+     
+}
+.Right_Side p{
+    padding: 10px;
+}
+.Right_Side li{
+    list-style: none;
+    padding: 10px;
+}
+strong{
+    font-weight: 700;
+}
+
