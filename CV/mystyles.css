@@ -40,6 +40,7 @@ body{
 
 .Container .Left_Side{
     position: relative;
+    display:block;
     background:rgb(11, 11, 69) ;
     padding: 40px;
 }
@@ -58,6 +59,7 @@ body{
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
+    padding: 20px;
 }
 .ProfileText .ImgBox img{
     position: absolute;
@@ -85,7 +87,7 @@ body{
     position: relative;
     width: 200px;
     max-width: 200px;
-    min-height: 400px;
+    min-height: auto;
     background:rgb(11, 11, 69);
 }
 .Contact .Up_Side{
@@ -137,17 +139,16 @@ body{
     position: relative;
     list-style: none;
     max-width: 10px 0;
-    cursor: pointer;
 }
 .Contact ul li span{
     color: white;
     font-weight: 300;
-    font-size:10px;
+    font-size:14px;
 }
 a{
     color:white;
     font-weight: 300;
-    font-size:10px;
+    font-size:14px;
 }
 
 
@@ -165,14 +166,8 @@ a{
 .InfNag{
     color:black;
     font-style: sans-serif;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     border-top: 1px solid rgba(11, 11, 69, 0.3);
-}
-.InfNag1{
-    color:black;
-    font-style: sans-serif;
-    padding-bottom: 10px;
-     
 }
 .Right_Side p{
     padding: 10px;
